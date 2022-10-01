@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <form id="calculadora">
+        <div class="visor">
+            <div class="box-shadow"></div>
+            <input type="text" name="lres" id="lres" value="" class="visor_lastInput" disabled>
+            <input type="text" name="res" id="res" value="0" class="visor_input" disabled>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao_fun">mrc</button>
+            <button type="button" class="calc_botao_fun">m-</button>
+            <button type="button" class="calc_botao_fun">m+</button>
+            <button type="button" class="calc_botao_op" onclick="op('/')">÷</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="digitar('ce', 'botao')">CE</button>
+            <button type="button" class="calc_botao bk" onclick="digitar('bk', 'botao')">BACKSPACE</button>
+            <button type="button" class="calc_botao_op" onclick="op('%')">%</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="digitar('7', 'botao')">7</button>
+            <button type="button" class="calc_botao" onclick="digitar('8', 'botao')">8</button>
+            <button type="button" class="calc_botao" onclick="digitar('9', 'botao')">9</button>
+            <button type="button" class="calc_botao_op" onclick="op('x')">x</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="digitar('4', 'botao')">4</button>
+            <button type="button" class="calc_botao" onclick="digitar('5', 'botao')">5</button>
+            <button type="button" class="calc_botao" onclick="digitar('6', 'botao')">6</button>
+            <button type="button" class="calc_botao_op" onclick="op('-')">-</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="digitar('1', 'botao')">1</button>
+            <button type="button" class="calc_botao" onclick="digitar('2', 'botao')">2</button>
+            <button type="button" class="calc_botao" onclick="digitar('3', 'botao')">3</button>
+            <button type="button" class="calc_botao_op" onclick="op('+')">+</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="digitar('0', 'botao')">0</button>
+            <button type="button" class="calc_botao" onclick="digitar('.', 'botao')">.</button>
+            <button type="button" class="calc_botao" onclick="digitar('c', 'botao')">C</button>
+            <button type="button" class="calc_botao_res" onclick="resultado()">=</button>
+        </div>
+    </form>
+</body>
+</html>
