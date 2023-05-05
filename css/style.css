@@ -4,7 +4,8 @@ body{
     color: #404040;
     background-color: #ffebcd;
     display: flex;
-    height: 60vh;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 #calculadora{
